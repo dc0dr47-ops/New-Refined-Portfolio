@@ -215,8 +215,8 @@ export const PROJECTS_DATA: Project[] = [
   {
     id: "ole-miss-rebels-branding",
     title: "Ole Miss Rebels Branding Collection",
-    category: "Brand Identity",
-    filterTag: "Branding",
+    category: "Vector Illustration",
+    filterTag: "Illustration",
     shortDescription: "A collegiate branding study featuring Ole Miss wordmarks, Rebels lettering, emblems, and mascot artwork.",
     thumbnailBg: "from-red-100 via-white to-blue-100",
     image: isometricTechCard768,
