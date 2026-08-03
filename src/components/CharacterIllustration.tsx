@@ -19,7 +19,7 @@ export const CharacterIllustration: React.FC<CharacterProps> = ({ pose, classNam
         {/* Hero Designer Portrait Image */}
         <img
           src={imageSrc || heroPortrait}
-          alt="Aftaaab Nadeeeem - Graphic Designer & Creative Technologist"
+          alt="Aftab Nadeem - Graphic Designer & Creative Technologist"
           className="w-full h-full max-h-full object-contain relative z-10 select-none drop-shadow-xl"
         />
       </div>
@@ -35,7 +35,7 @@ export const CharacterIllustration: React.FC<CharacterProps> = ({ pose, classNam
         {/* About Designer Portrait Image */}
         <img
           src={imageSrc || aboutPortrait}
-          alt="Aftaaab Nadeeeem - About Portrait"
+          alt="Aftab Nadeem - About Portrait"
           className="w-full h-full max-h-full object-contain relative z-10 select-none drop-shadow-lg"
         />
       </div>
@@ -50,7 +50,7 @@ export const CharacterIllustration: React.FC<CharacterProps> = ({ pose, classNam
       {/* Contact Designer Portrait Image */}
       <img
         src={imageSrc || contactPortrait}
-        alt="Aftaaab Nadeeeem - Contact Portrait"
+        alt="Aftab Nadeem - Contact Portrait"
         className="w-full h-full max-h-full object-contain relative z-10 select-none drop-shadow-lg"
       />
     </div>

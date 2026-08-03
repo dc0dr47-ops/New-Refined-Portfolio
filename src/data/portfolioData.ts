@@ -46,7 +46,7 @@ export interface ProcessStep {
 }
 
 export const DESIGNER_INFO = {
-  name: "Aftaaab Nadeeeem",
+  name: "Aftab Nadeem",
   title: "Graphic Designer, Visual Storyteller and Creative Problem Solver",
   tagline: "I create meaningful visual experiences through illustration, branding, photo editing, social media design and modern web interfaces.",
   location: "Lahore, Pakistan",
