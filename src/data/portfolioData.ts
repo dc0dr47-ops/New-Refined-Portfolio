@@ -16,6 +16,12 @@ import eagleMascotCard1200 from '../assets/images/eagle-mascot-card-1200.webp';
 import eagleMascotExpanded768 from '../assets/images/eagle-mascot-expanded-768.webp';
 import eagleMascotExpanded1200 from '../assets/images/eagle-mascot-expanded-1200.webp';
 import eagleMascotExpanded1672 from '../assets/images/eagle-mascot-expanded-1672.webp';
+import gamecocksCard480 from '../assets/images/gamecocks-card-480.webp';
+import gamecocksCard768 from '../assets/images/gamecocks-card-768.webp';
+import gamecocksCard1200 from '../assets/images/gamecocks-card-1200.webp';
+import gamecocksExpanded768 from '../assets/images/gamecocks-expanded-768.webp';
+import gamecocksExpanded1200 from '../assets/images/gamecocks-expanded-1200.webp';
+import gamecocksExpanded1672 from '../assets/images/gamecocks-expanded-1672.webp';
 
 export interface Service {
   id: string;
@@ -263,25 +269,26 @@ export const PROJECTS_DATA: Project[] = [
     outcome: "Delivered a versatile, print-ready mascot system suitable for team identities, uniforms, apparel, stickers, signage, and digital campaigns."
   },
   {
-    id: "retro-synthwave-posters",
-    title: "Retro Synthwave Vector Poster Series",
+    id: "south-carolina-gamecocks-collection",
+    title: "South Carolina Gamecocks Illustration Collection",
     category: "Vector Illustration",
     filterTag: "Illustration",
-    shortDescription: "Vibrant 80s neon synthwave vector artwork and concert poster series.",
-    thumbnailBg: "from-purple-100 via-pink-100 to-rose-100",
-    image: "https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?auto=format&fit=crop&w=1000&q=80",
-    gallery: [
-      "https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?auto=format&fit=crop&w=1200&q=80",
-      "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1200&q=80"
-    ],
-    client: "Neon Dreams Festival",
-    year: "2024",
-    role: "Visual Artist & Poster Designer",
-    overview: "Designed a nostalgic retro-futuristic poster series featuring neon wireframe landscapes, chrome typography, and glowing suns for an electronic music festival.",
-    challenge: "Creating vibrant glowing atmospheric effects using pure scalable vector gradients and blend modes.",
-    approach: "Utilized Illustrator blend tools, multi-stop radial gradients, and custom chrome drop-shadow treatments.",
-    toolsUsed: ["Adobe Illustrator", "Adobe Photoshop"],
-    outcome: "Over 5,000 physical print prints sold out within 48 hours of release."
+    shortDescription: "A collegiate illustration series featuring Gamecocks mascot artwork, campus emblems, badges, and fan graphics.",
+    thumbnailBg: "from-red-100 via-white to-zinc-100",
+    image: gamecocksCard768,
+    imageSrcSet: `${gamecocksCard480} 480w, ${gamecocksCard768} 768w, ${gamecocksCard1200} 1200w`,
+    detailImage: gamecocksExpanded1200,
+    detailImageSrcSet: `${gamecocksExpanded768} 768w, ${gamecocksExpanded1200} 1200w, ${gamecocksExpanded1672} 1672w`,
+    detailAspect: '16/9',
+    gallery: [],
+    client: "South Carolina Gamecocks — Concept Study",
+    year: "2026",
+    role: "Vector Illustrator & Collegiate Graphics Designer",
+    overview: "Created a coordinated collection of South Carolina Gamecocks artwork combining a bold rooster mascot with university-inspired crests, campus symbols, fan slogans, and athletic badge designs.",
+    challenge: "Maintaining consistent garnet, black, and white styling across mascot illustration, typography, architectural icons, state symbols, and differently shaped emblems.",
+    approach: "Built a unified visual system using strong athletic lettering, high-contrast outlines, controlled color hierarchy, and repeatable badge construction suited to both detailed and compact applications.",
+    toolsUsed: ["Adobe Illustrator", "Adobe Photoshop", "AI Tools"],
+    outcome: "Delivered a versatile, print-ready collection suitable for fan apparel concepts, stickers, campus merchandise, social graphics, signage, and promotional materials."
   },
   {
     id: "cyber-city-concept-art",
