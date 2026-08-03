@@ -7,7 +7,9 @@ import characterSkeletonExpanded1536 from '../assets/images/character-skeleton-e
 import isometricTechCard480 from '../assets/images/isometric-tech-card-480.webp';
 import isometricTechCard768 from '../assets/images/isometric-tech-card-768.webp';
 import isometricTechCard1200 from '../assets/images/isometric-tech-card-1200.webp';
-import isometricTechExpandedWide919 from '../assets/images/isometric-tech-expanded-wide-919.webp';
+import oleMissExpanded768 from '../assets/images/ole-miss-expanded-768.webp';
+import oleMissExpanded1200 from '../assets/images/ole-miss-expanded-1200.webp';
+import oleMissExpanded1672 from '../assets/images/ole-miss-expanded-1672.webp';
 
 export interface Service {
   id: string;
@@ -223,9 +225,9 @@ export const PROJECTS_DATA: Project[] = [
     thumbnailBg: "from-sky-100 via-indigo-100 to-blue-100",
     image: isometricTechCard768,
     imageSrcSet: `${isometricTechCard480} 480w, ${isometricTechCard768} 768w, ${isometricTechCard1200} 1200w`,
-    detailImage: isometricTechExpandedWide919,
-    detailImageSrcSet: `${isometricTechExpandedWide919} 919w`,
-    detailAspect: 'wide',
+    detailImage: oleMissExpanded1200,
+    detailImageSrcSet: `${oleMissExpanded768} 768w, ${oleMissExpanded1200} 1200w, ${oleMissExpanded1672} 1672w`,
+    detailAspect: '16/9',
     gallery: [
       "https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=1200&q=80",
       "https://images.unsplash.com/photo-1558655146-d09347e92766?auto=format&fit=crop&w=1200&q=80"
