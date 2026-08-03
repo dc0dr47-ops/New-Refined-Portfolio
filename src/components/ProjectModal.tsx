@@ -54,12 +54,12 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) 
         <div className="p-6 sm:p-8 md:p-10 overflow-y-auto space-y-8">
           
           {/* Main Hero Image */}
-          <div className="w-full aspect-[16/9] overflow-hidden bg-white rounded-xl sm:rounded-2xl md:rounded-[18px] border border-[#FFE9E0] shadow-sm">
+          <div className="rounded-2xl sm:rounded-3xl overflow-hidden border border-[#FFE9E0] shadow-sm max-h-[450px]">
             <img
-              src={project.modalImage || project.image}
+              src={project.image}
               alt={project.title}
               referrerPolicy="no-referrer"
-              className="block w-full h-full object-contain object-center max-w-full"
+              className="w-full h-full object-cover"
             />
           </div>
 

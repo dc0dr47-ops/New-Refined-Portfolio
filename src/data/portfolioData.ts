@@ -26,7 +26,6 @@ export interface Project {
   shortDescription: string;
   thumbnailBg: string;
   image: string;
-  modalImage?: string;
   gallery: string[];
   client: string;
   year: string;
@@ -47,7 +46,7 @@ export interface ProcessStep {
 }
 
 export const DESIGNER_INFO = {
-  name: "Aftab Nadeem",
+  name: "Aftaaab Nadeeeem",
   title: "Graphic Designer, Visual Storyteller and Creative Problem Solver",
   tagline: "I create meaningful visual experiences through illustration, branding, photo editing, social media design and modern web interfaces.",
   location: "Lahore, Pakistan",
@@ -266,10 +265,10 @@ export const PROJECTS_DATA: Project[] = [
     filterTag: "Illustration",
     shortDescription: "Detailed vector cityscape illustration with futuristic neon architecture and atmospheric lighting.",
     thumbnailBg: "from-cyan-100 via-blue-100 to-slate-100",
-    image: "/assets/cyberpunk_card_4x3.svg",
-    modalImage: "/assets/cyberpunk_modal_16x9.svg",
+    image: "https://images.unsplash.com/photo-1519501025264-65ba15a82390?auto=format&fit=crop&w=1000&q=80",
     gallery: [
-      "/assets/cyberpunk_modal_16x9.svg"
+      "https://images.unsplash.com/photo-1519501025264-65ba15a82390?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1514565131-fce0801e5785?auto=format&fit=crop&w=1200&q=80"
     ],
     client: "Aether Interactive Games",
     year: "2025",

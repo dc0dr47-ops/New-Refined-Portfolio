@@ -27,7 +27,7 @@ export const WhatsAppButton: React.FC = () => {
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
         className="relative flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 bg-[#25D366] hover:bg-[#20bd5a] text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-110 active:scale-95 focus:outline-none focus:ring-4 focus:ring-[#25D366]/40"
-        aria-label="Chat with Aftab Nadeem on WhatsApp"
+        aria-label="Chat with Aftaaab Nadeeeem on WhatsApp"
       >
         {/* Subtle Pulse Ring */}
         <span className="absolute inset-0 rounded-full bg-[#25D366] opacity-35 animate-ping -z-10 group-hover:animate-none pointer-events-none" />

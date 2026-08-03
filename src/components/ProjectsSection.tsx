@@ -70,12 +70,12 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({ onSelectProjec
               >
                 <div>
                   {/* Thumbnail Image Container */}
-                  <div className="relative aspect-[4/3] w-full overflow-hidden bg-white rounded-t-3xl">
+                  <div className="relative aspect-[4/3] overflow-hidden bg-slate-100">
                     <img
                       src={project.image}
                       alt={project.title}
                       referrerPolicy="no-referrer"
-                      className="w-full h-full object-contain object-center max-w-full group-hover:scale-105 transition-transform duration-500 ease-out"
+                      className="w-full h-full object-cover group-hover:scale-108 transition-transform duration-500 ease-out"
                     />
 
                     {/* Dark Hover Overlay */}
