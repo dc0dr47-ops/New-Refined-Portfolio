@@ -189,57 +189,50 @@ export const TOOLS_DATA: Tool[] = [
 ];
 
 export const PROJECTS_DATA: Project[] = [
-  // ================= ILLUSTRATION (5 PROJECTS) =================
+  // ================= PROJECTS =================
   {
-    id: "character-illustration",
-    title: "Character Illustration Collection",
+    id: "skull-typography-apparel",
+    title: "Skull Typography Apparel Collection",
     category: "Vector Illustration",
     filterTag: "Illustration",
-    shortDescription: "Playful 3D mascot character design and vector series for a tech brand mascot campaign.",
-    thumbnailBg: "from-amber-100 via-orange-100 to-peach-100",
+    shortDescription: "Bold black-and-white skull illustrations paired with expressive lettering for apparel and merchandise.",
+    thumbnailBg: "from-slate-100 via-zinc-100 to-stone-100",
     image: characterIllustrationCard768,
     imageSrcSet: `${characterIllustrationCard480} 480w, ${characterIllustrationCard768} 768w, ${characterIllustrationCard1200} 1200w`,
     detailImage: characterSkeletonExpanded1200,
     detailImageSrcSet: `${characterSkeletonExpanded768} 768w, ${characterSkeletonExpanded1200} 1200w, ${characterSkeletonExpanded1536} 1536w`,
     detailAspect: '3/2',
-    gallery: [
-      "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1200&q=80",
-      "https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?auto=format&fit=crop&w=1200&q=80",
-      "https://images.unsplash.com/photo-1563089145-599997674d42?auto=format&fit=crop&w=1200&q=80"
-    ],
-    client: "Lumina Tech Studios",
-    year: "2025",
-    role: "Lead Illustrator & Character Designer",
-    overview: "Created a series of 12 vibrant, friendly mascot character poses for Lumina's digital onboarding app. Each character embodies core brand values like curiosity, speed, and collaboration.",
-    challenge: "Developing a friendly 3D-styled vector illustration system that scales effortlessly across mobile app banners, physical stickers, and web hero graphics while maintaining sharp vector precision.",
-    approach: "Designed modular character rigs in Adobe Illustrator with custom isometric grid guides, layered soft radial highlights, and warm pastel color gradients.",
-    toolsUsed: ["Adobe Illustrator", "Figma", "AI Tools"],
-    outcome: "Increased user onboarding engagement by 34% and won the 2025 Creative Vector Award for Mascot Design."
+    gallery: [],
+    client: "Independent Apparel Collection",
+    year: "2026",
+    role: "Vector Illustrator & Lettering Designer",
+    overview: "Developed a coordinated collection of skull-based graphics combining detailed monochrome illustration with bold, personality-driven typography for shirts, stickers, and print merchandise.",
+    challenge: "Keeping intricate skull details, decorative elements, and varied lettering styles readable at both small print sizes and large-format applications without losing visual impact.",
+    approach: "Built each design with clean high-contrast linework, balanced negative space, and carefully matched type treatments, then refined the artwork for dependable reproduction across print and digital formats.",
+    toolsUsed: ["Adobe Illustrator", "Adobe Photoshop", "AI Tools"],
+    outcome: "Delivered a cohesive, print-ready collection of distinctive skull graphics suitable for apparel, stickers, posters, and merchandise."
   },
   {
-    id: "isometric-tech-illustrations",
-    title: "Isometric Tech Illustration System",
-    category: "Vector Illustration",
-    filterTag: "Illustration",
-    shortDescription: "Custom 3D isometric vector asset library and hero graphics for a SaaS cloud platform.",
-    thumbnailBg: "from-sky-100 via-indigo-100 to-blue-100",
+    id: "ole-miss-rebels-branding",
+    title: "Ole Miss Rebels Branding Collection",
+    category: "Brand Identity",
+    filterTag: "Branding",
+    shortDescription: "A collegiate branding study featuring Ole Miss wordmarks, Rebels lettering, emblems, and mascot artwork.",
+    thumbnailBg: "from-red-100 via-white to-blue-100",
     image: isometricTechCard768,
     imageSrcSet: `${isometricTechCard480} 480w, ${isometricTechCard768} 768w, ${isometricTechCard1200} 1200w`,
     detailImage: oleMissExpanded1200,
     detailImageSrcSet: `${oleMissExpanded768} 768w, ${oleMissExpanded1200} 1200w, ${oleMissExpanded1672} 1672w`,
     detailAspect: '16/9',
-    gallery: [
-      "https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=1200&q=80",
-      "https://images.unsplash.com/photo-1558655146-d09347e92766?auto=format&fit=crop&w=1200&q=80"
-    ],
-    client: "DataPulse Analytics",
-    year: "2025",
-    role: "Lead Vector Artist",
-    overview: "Designed an extensive library of 40+ isometric vector icons and contextual hero illustrations for DataPulse's enterprise software suite.",
-    challenge: "Ensuring exact isometric angle alignment across complex data structures while maintaining crisp readability at micro sizes.",
-    approach: "Created custom isometric grid templates and modular vector components in Adobe Illustrator with scalable stroke weights.",
-    toolsUsed: ["Adobe Illustrator", "Figma"],
-    outcome: "Standardized enterprise design system across 6 product teams, improving UI visual consistency."
+    gallery: [],
+    client: "Ole Miss Rebels — Concept Study",
+    year: "2026",
+    role: "Brand & Mascot Illustration Designer",
+    overview: "Created a presentation-ready collegiate identity study uniting Ole Miss scripts, Rebels wordmarks, varsity emblems, and illustrated mascot variations within one consistent visual collection.",
+    challenge: "Maintaining a recognizable red-and-navy identity across very different assets, from compact badges and lettermarks to expressive scripts and detailed mascot illustrations.",
+    approach: "Standardized the color palette, outline hierarchy, letter proportions, and mascot styling so every element feels related while remaining clear and distinctive at different sizes.",
+    toolsUsed: ["Adobe Illustrator", "Adobe Photoshop"],
+    outcome: "Produced a cohesive branding collection suitable for presentations, fan merchandise concepts, social graphics, and promotional applications."
   },
   {
     id: "botanical-vector-series",
