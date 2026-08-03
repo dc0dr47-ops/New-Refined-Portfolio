@@ -22,6 +22,12 @@ import gamecocksCard1200 from '../assets/images/gamecocks-card-1200.webp';
 import gamecocksExpanded768 from '../assets/images/gamecocks-expanded-768.webp';
 import gamecocksExpanded1200 from '../assets/images/gamecocks-expanded-1200.webp';
 import gamecocksExpanded1672 from '../assets/images/gamecocks-expanded-1672.webp';
+import universityLogosCard480 from '../assets/images/university-logos-card-480.webp';
+import universityLogosCard768 from '../assets/images/university-logos-card-768.webp';
+import universityLogosCard1200 from '../assets/images/university-logos-card-1200.webp';
+import universityLogosExpanded768 from '../assets/images/university-logos-expanded-768.webp';
+import universityLogosExpanded1200 from '../assets/images/university-logos-expanded-1200.webp';
+import universityLogosExpanded1672 from '../assets/images/university-logos-expanded-1672.webp';
 
 export interface Service {
   id: string;
@@ -291,25 +297,26 @@ export const PROJECTS_DATA: Project[] = [
     outcome: "Delivered a versatile, print-ready collection suitable for fan apparel concepts, stickers, campus merchandise, social graphics, signage, and promotional materials."
   },
   {
-    id: "cyber-city-concept-art",
-    title: "Cyberpunk Cityscape Concept Vector Art",
+    id: "university-logo-design-collection",
+    title: "University Logo Design Collection",
     category: "Vector Illustration",
     filterTag: "Illustration",
-    shortDescription: "Detailed vector cityscape illustration with futuristic neon architecture and atmospheric lighting.",
-    thumbnailBg: "from-cyan-100 via-blue-100 to-slate-100",
-    image: "https://images.unsplash.com/photo-1519501025264-65ba15a82390?auto=format&fit=crop&w=1000&q=80",
-    gallery: [
-      "https://images.unsplash.com/photo-1519501025264-65ba15a82390?auto=format&fit=crop&w=1200&q=80",
-      "https://images.unsplash.com/photo-1514565131-fce0801e5785?auto=format&fit=crop&w=1200&q=80"
-    ],
-    client: "Aether Interactive Games",
-    year: "2025",
-    role: "Concept Environment Artist",
-    overview: "Developed detailed vector concept environments and keyframe artwork for an indie sci-fi video game project.",
-    challenge: "Maintaining visual clarity across dozens of overlapping skyscraper layers and holographic signboards.",
-    approach: "Organized complex artwork into structured depth layers with atmospheric perspective color fades.",
-    toolsUsed: ["Adobe Illustrator", "AI Tools"],
-    outcome: "Used as primary marketing key art during successful Kickstarter campaign funding."
+    shortDescription: "A polished collection of university-inspired wordmarks, monograms, crests, and athletic logo concepts.",
+    thumbnailBg: "from-red-100 via-amber-100 to-white",
+    image: universityLogosCard768,
+    imageSrcSet: `${universityLogosCard480} 480w, ${universityLogosCard768} 768w, ${universityLogosCard1200} 1200w`,
+    detailImage: universityLogosExpanded1200,
+    detailImageSrcSet: `${universityLogosExpanded768} 768w, ${universityLogosExpanded1200} 1200w, ${universityLogosExpanded1672} 1672w`,
+    detailAspect: '16/9',
+    gallery: [],
+    client: "Collegiate Identity Concept Series",
+    year: "2026",
+    role: "Vector Logo & Identity Designer",
+    overview: "Created a coordinated set of university-inspired identity concepts, pairing bold letterforms and classic crest construction with athletic emblems, school-color systems, and recognisable mascots.",
+    challenge: "Giving each identity a distinct collegiate personality while keeping the shapes clean, legible, and strong enough for uniforms, signage, digital media, and small-format merchandise.",
+    approach: "Used geometric letter construction, carefully balanced outlines, traditional varsity proportions, and focused color palettes to produce marks that remain clear and cohesive at every scale.",
+    toolsUsed: ["Adobe Illustrator", "Adobe Photoshop", "AI Tools"],
+    outcome: "Delivered a flexible set of presentation-ready logo concepts suitable for university branding studies, athletics graphics, apparel, stickers, and promotional design."
   },
 
   // ================= PHOTO EDITING (5 PROJECTS) =================
