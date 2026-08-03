@@ -7,9 +7,7 @@ import characterIllustrationExpanded1672 from '../assets/images/character-illust
 import isometricTechCard480 from '../assets/images/isometric-tech-card-480.webp';
 import isometricTechCard768 from '../assets/images/isometric-tech-card-768.webp';
 import isometricTechCard1200 from '../assets/images/isometric-tech-card-1200.webp';
-import isometricTechExpanded768 from '../assets/images/isometric-tech-expanded-768.webp';
-import isometricTechExpanded1200 from '../assets/images/isometric-tech-expanded-1200.webp';
-import isometricTechExpanded1448 from '../assets/images/isometric-tech-expanded-1448.webp';
+import isometricTechExpandedWide919 from '../assets/images/isometric-tech-expanded-wide-919.webp';
 
 export interface Service {
   id: string;
@@ -42,7 +40,7 @@ export interface Project {
   imageSrcSet?: string;
   detailImage?: string;
   detailImageSrcSet?: string;
-  detailAspect?: '16/9' | '4/3';
+  detailAspect?: '16/9' | '4/3' | 'wide';
   gallery: string[];
   client: string;
   year: string;
@@ -224,9 +222,9 @@ export const PROJECTS_DATA: Project[] = [
     thumbnailBg: "from-sky-100 via-indigo-100 to-blue-100",
     image: isometricTechCard768,
     imageSrcSet: `${isometricTechCard480} 480w, ${isometricTechCard768} 768w, ${isometricTechCard1200} 1200w`,
-    detailImage: isometricTechExpanded1200,
-    detailImageSrcSet: `${isometricTechExpanded768} 768w, ${isometricTechExpanded1200} 1200w, ${isometricTechExpanded1448} 1448w`,
-    detailAspect: '4/3',
+    detailImage: isometricTechExpandedWide919,
+    detailImageSrcSet: `${isometricTechExpandedWide919} 919w`,
+    detailAspect: 'wide',
     gallery: [
       "https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=1200&q=80",
       "https://images.unsplash.com/photo-1558655146-d09347e92766?auto=format&fit=crop&w=1200&q=80"
