@@ -61,9 +61,12 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) 
           >
             <img
               src={project.detailImage ?? project.image}
+              srcSet={project.detailImageSrcSet}
+              sizes="(min-width: 1024px) 832px, (min-width: 640px) calc(100vw - 112px), calc(100vw - 56px)"
               alt={project.title}
               referrerPolicy="no-referrer"
               decoding="async"
+              fetchPriority="high"
               className={`w-full h-full ${project.detailImage ? 'object-contain' : 'object-cover'}`}
             />
           </div>

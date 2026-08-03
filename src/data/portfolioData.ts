@@ -1,5 +1,9 @@
-import characterIllustrationCard from '../assets/images/character-illustration-card.png';
-import characterIllustrationExpanded from '../assets/images/character-illustration-expanded.png';
+import characterIllustrationCard480 from '../assets/images/character-illustration-card-480.webp';
+import characterIllustrationCard768 from '../assets/images/character-illustration-card-768.webp';
+import characterIllustrationCard1200 from '../assets/images/character-illustration-card-1200.webp';
+import characterIllustrationExpanded768 from '../assets/images/character-illustration-expanded-768.webp';
+import characterIllustrationExpanded1200 from '../assets/images/character-illustration-expanded-1200.webp';
+import characterIllustrationExpanded1672 from '../assets/images/character-illustration-expanded-1672.webp';
 
 export interface Service {
   id: string;
@@ -29,7 +33,9 @@ export interface Project {
   shortDescription: string;
   thumbnailBg: string;
   image: string;
+  imageSrcSet?: string;
   detailImage?: string;
+  detailImageSrcSet?: string;
   gallery: string[];
   client: string;
   year: string;
@@ -184,8 +190,10 @@ export const PROJECTS_DATA: Project[] = [
     filterTag: "Illustration",
     shortDescription: "Playful 3D mascot character design and vector series for a tech brand mascot campaign.",
     thumbnailBg: "from-amber-100 via-orange-100 to-peach-100",
-    image: characterIllustrationCard,
-    detailImage: characterIllustrationExpanded,
+    image: characterIllustrationCard768,
+    imageSrcSet: `${characterIllustrationCard480} 480w, ${characterIllustrationCard768} 768w, ${characterIllustrationCard1200} 1200w`,
+    detailImage: characterIllustrationExpanded1200,
+    detailImageSrcSet: `${characterIllustrationExpanded768} 768w, ${characterIllustrationExpanded1200} 1200w, ${characterIllustrationExpanded1672} 1672w`,
     gallery: [
       "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1200&q=80",
       "https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?auto=format&fit=crop&w=1200&q=80",

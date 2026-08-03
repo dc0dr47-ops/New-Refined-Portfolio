@@ -73,6 +73,8 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({ onSelectProjec
                   <div className="relative aspect-[4/3] overflow-hidden bg-slate-100">
                     <img
                       src={project.image}
+                      srcSet={project.imageSrcSet}
+                      sizes="(min-width: 1024px) 26vw, (min-width: 768px) 42vw, calc(100vw - 80px)"
                       alt={project.title}
                       referrerPolicy="no-referrer"
                       loading="lazy"
