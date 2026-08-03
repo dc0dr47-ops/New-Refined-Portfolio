@@ -4,6 +4,12 @@ import characterIllustrationCard1200 from '../assets/images/character-illustrati
 import characterIllustrationExpanded768 from '../assets/images/character-illustration-expanded-768.webp';
 import characterIllustrationExpanded1200 from '../assets/images/character-illustration-expanded-1200.webp';
 import characterIllustrationExpanded1672 from '../assets/images/character-illustration-expanded-1672.webp';
+import isometricTechCard480 from '../assets/images/isometric-tech-card-480.webp';
+import isometricTechCard768 from '../assets/images/isometric-tech-card-768.webp';
+import isometricTechCard1200 from '../assets/images/isometric-tech-card-1200.webp';
+import isometricTechExpanded768 from '../assets/images/isometric-tech-expanded-768.webp';
+import isometricTechExpanded1200 from '../assets/images/isometric-tech-expanded-1200.webp';
+import isometricTechExpanded1448 from '../assets/images/isometric-tech-expanded-1448.webp';
 
 export interface Service {
   id: string;
@@ -36,6 +42,7 @@ export interface Project {
   imageSrcSet?: string;
   detailImage?: string;
   detailImageSrcSet?: string;
+  detailAspect?: '16/9' | '4/3';
   gallery: string[];
   client: string;
   year: string;
@@ -215,7 +222,11 @@ export const PROJECTS_DATA: Project[] = [
     filterTag: "Illustration",
     shortDescription: "Custom 3D isometric vector asset library and hero graphics for a SaaS cloud platform.",
     thumbnailBg: "from-sky-100 via-indigo-100 to-blue-100",
-    image: "https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=1000&q=80",
+    image: isometricTechCard768,
+    imageSrcSet: `${isometricTechCard480} 480w, ${isometricTechCard768} 768w, ${isometricTechCard1200} 1200w`,
+    detailImage: isometricTechExpanded1200,
+    detailImageSrcSet: `${isometricTechExpanded768} 768w, ${isometricTechExpanded1200} 1200w, ${isometricTechExpanded1448} 1448w`,
+    detailAspect: '4/3',
     gallery: [
       "https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=1200&q=80",
       "https://images.unsplash.com/photo-1558655146-d09347e92766?auto=format&fit=crop&w=1200&q=80"

@@ -56,7 +56,9 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) 
           {/* Main Hero Image */}
           <div
             className={`rounded-2xl sm:rounded-3xl overflow-hidden border border-[#FFE9E0] shadow-sm ${
-              project.detailImage ? 'aspect-video bg-white' : 'max-h-[450px]'
+              project.detailImage
+                ? `${project.detailAspect === '4/3' ? 'aspect-[4/3]' : 'aspect-video'} bg-white`
+                : 'max-h-[450px]'
             }`}
           >
             <img
