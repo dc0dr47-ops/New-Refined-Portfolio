@@ -10,6 +10,12 @@ import isometricTechCard1200 from '../assets/images/isometric-tech-card-1200.web
 import oleMissExpanded768 from '../assets/images/ole-miss-expanded-768.webp';
 import oleMissExpanded1200 from '../assets/images/ole-miss-expanded-1200.webp';
 import oleMissExpanded1672 from '../assets/images/ole-miss-expanded-1672.webp';
+import eagleMascotCard480 from '../assets/images/eagle-mascot-card-480.webp';
+import eagleMascotCard768 from '../assets/images/eagle-mascot-card-768.webp';
+import eagleMascotCard1200 from '../assets/images/eagle-mascot-card-1200.webp';
+import eagleMascotExpanded768 from '../assets/images/eagle-mascot-expanded-768.webp';
+import eagleMascotExpanded1200 from '../assets/images/eagle-mascot-expanded-1200.webp';
+import eagleMascotExpanded1672 from '../assets/images/eagle-mascot-expanded-1672.webp';
 
 export interface Service {
   id: string;
@@ -235,25 +241,26 @@ export const PROJECTS_DATA: Project[] = [
     outcome: "Produced a cohesive branding collection suitable for presentations, fan merchandise concepts, social graphics, and promotional applications."
   },
   {
-    id: "botanical-vector-series",
-    title: "Botanical & Organic Vector Artwork",
+    id: "bald-eagle-mascot-collection",
+    title: "Bald Eagle Mascot Illustration Collection",
     category: "Vector Illustration",
     filterTag: "Illustration",
-    shortDescription: "Hand-crafted organic botanical vector series for high-end lifestyle brand packaging.",
-    thumbnailBg: "from-emerald-100 via-teal-100 to-green-100",
-    image: "https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?auto=format&fit=crop&w=1000&q=80",
-    gallery: [
-      "https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?auto=format&fit=crop&w=1200&q=80",
-      "https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=1200&q=80"
-    ],
-    client: "Verdant Living Co.",
-    year: "2025",
-    role: "Botanical Illustrator",
-    overview: "Created a series of intricate vector botanical illustrations depicting exotic foliage, flowers, and medicinal herbs for organic skincare packaging and luxury stationery.",
-    challenge: "Balancing delicate organic line-work with bold, reproducible vector shapes suitable for gold foil stamping.",
-    approach: "Combined hand-drawn brush ink sketches with precision pen tool vectorization and custom textured gradient overlays.",
-    toolsUsed: ["Adobe Illustrator", "Adobe Photoshop"],
-    outcome: "Featured on luxury packaging in over 120 retail boutiques nationwide."
+    shortDescription: "A bold series of bald-eagle mascot illustrations developed for athletic branding, apparel, and merchandise.",
+    thumbnailBg: "from-amber-100 via-white to-stone-100",
+    image: eagleMascotCard768,
+    imageSrcSet: `${eagleMascotCard480} 480w, ${eagleMascotCard768} 768w, ${eagleMascotCard1200} 1200w`,
+    detailImage: eagleMascotExpanded1200,
+    detailImageSrcSet: `${eagleMascotExpanded768} 768w, ${eagleMascotExpanded1200} 1200w, ${eagleMascotExpanded1672} 1672w`,
+    detailAspect: '16/9',
+    gallery: [],
+    client: "Athletic Mascot Concept Series",
+    year: "2026",
+    role: "Vector Illustrator & Mascot Designer",
+    overview: "Developed a coordinated collection of bald-eagle mascot heads exploring frontal, profile, angled, calm, and aggressive expressions for sports identities and promotional artwork.",
+    challenge: "Preserving the eagle's recognizable anatomy and commanding personality across multiple poses while keeping every variation consistent, scalable, and readable at logo sizes.",
+    approach: "Constructed each mascot with sharp black contour work, layered white feather shapes, controlled brown shadows, and a unified gold palette for the beak and eyes.",
+    toolsUsed: ["Adobe Illustrator", "Adobe Photoshop", "AI Tools"],
+    outcome: "Delivered a versatile, print-ready mascot system suitable for team identities, uniforms, apparel, stickers, signage, and digital campaigns."
   },
   {
     id: "retro-synthwave-posters",
