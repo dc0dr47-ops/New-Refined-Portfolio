@@ -1,0 +1,141 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="100%" height="100%">
+  <defs>
+    <path id="textArcTop" d="M 500 210 A 300 180 0 0 1 1100 210" />
+    <path id="textArcSub" d="M 480 270 A 320 200 0 0 1 1120 270" />
+  </defs>
+
+  <!-- Clean Pure White Background -->
+  <rect width="1600" height="900" fill="#FFFFFF" />
+
+  <!-- Arched Vintage Typography -->
+  <text fill="#0F172A" font-family="'Cinzel', 'Playfair Display', 'Georgia', serif" font-weight="900" font-size="44" letter-spacing="3">
+    <textPath href="#textArcTop" startOffset="50%" text-anchor="middle">
+      DEAD ON THE INSIDE,
+    </textPath>
+  </text>
+  
+  <text fill="#0F172A" font-family="'Cinzel', 'Playfair Display', 'Georgia', serif" font-weight="900" font-size="38" letter-spacing="2">
+    <textPath href="#textArcSub" startOffset="50%" text-anchor="middle">
+      FABULOUS ON THE OUTSIDE
+    </textPath>
+  </text>
+
+  <g transform="translate(400, 50)">
+    <!-- Sparkles / Star Motifs -->
+    <path d="M 220 300 L 225 315 L 240 320 L 225 325 L 220 340 L 215 325 L 200 320 L 215 315 Z" fill="#0F172A" />
+    <path d="M 150 370 L 153 380 L 163 383 L 153 386 L 150 396 L 147 386 L 137 383 L 147 380 Z" fill="#0F172A" />
+    <path d="M 155 520 L 160 535 L 175 540 L 160 545 L 155 560 L 150 545 L 135 540 L 150 535 Z" fill="#0F172A" />
+    <path d="M 255 670 L 258 678 L 266 681 L 258 684 L 255 692 L 252 684 L 244 681 L 252 678 Z" fill="#0F172A" />
+
+    <path d="M 580 300 L 585 315 L 600 320 L 585 325 L 580 340 L 575 325 L 560 320 L 575 315 Z" fill="#0F172A" />
+    <path d="M 650 370 L 653 380 L 663 383 L 653 386 L 650 396 L 647 386 L 637 383 L 647 380 Z" fill="#0F172A" />
+    <path d="M 645 520 L 650 535 L 665 540 L 650 545 L 645 560 L 640 545 L 625 540 L 640 535 Z" fill="#0F172A" />
+    <path d="M 545 670 L 548 678 L 556 681 L 548 684 L 545 692 L 542 684 L 534 681 L 542 678 Z" fill="#0F172A" />
+
+    <!-- Top Left Roses & Leaves -->
+    <g transform="translate(260, 260)">
+      <path d="M -40 -40 C -80 -60, -90 -20, -60 10 C -40 0, -30 -30, -40 -40 Z" fill="#FFFFFF" stroke="#0F172A" stroke-width="5" />
+      <path d="M -40 -40 L -70 -20" stroke="#0F172A" stroke-width="4" />
+      <path d="M -20 50 C -50 80, -80 70, -70 30 C -50 30, -30 40, -20 50 Z" fill="#FFFFFF" stroke="#0F172A" stroke-width="5" />
+      <path d="M -20 50 L -55 50" stroke="#0F172A" stroke-width="4" />
+      <path d="M 0 60 C -40 40, -60 -10, -30 -50 C 0 -80, 50 -70, 70 -30 C 90 20, 50 80, 0 60 Z" fill="#FFFFFF" stroke="#0F172A" stroke-width="6" />
+      <path d="M -20 -30 C -10 -50, 30 -50, 40 -20 C 50 10, 10 40, -10 20 C -20 10, -25 -20, -20 -30 Z" fill="#FFFFFF" stroke="#0F172A" stroke-width="5" />
+      <path d="M 0 -10 C 10 -20, 25 -15, 20 0 C 15 15, -5 10, 0 -10 Z" fill="#0F172A" />
+    </g>
+
+    <!-- Top Right Roses & Leaves -->
+    <g transform="translate(540, 270)">
+      <path d="M 40 -40 C 80 -60, 90 -20, 60 10 C 40 0, 30 -30, 40 -40 Z" fill="#FFFFFF" stroke="#0F172A" stroke-width="5" />
+      <path d="M 40 -40 L 70 -20" stroke="#0F172A" stroke-width="4" />
+      <path d="M 20 50 C 50 80, 80 70, 70 30 C 50 30, 30 40, 20 50 Z" fill="#FFFFFF" stroke="#0F172A" stroke-width="5" />
+      <path d="M 20 50 L 55 50" stroke="#0F172A" stroke-width="4" />
+      <path d="M 0 60 C -50 80, -90 20, -70 -30 C -50 -70, 0 -80, 30 -50 C 60 -10, 40 40, 0 60 Z" fill="#FFFFFF" stroke="#0F172A" stroke-width="6" />
+      <path d="M -40 -20 C -30 -50, 10 -50, 20 -30 C 25 -20, 20 10, -10 20 C -50 10, -50 -10, -40 -20 Z" fill="#FFFFFF" stroke="#0F172A" stroke-width="5" />
+      <path d="M -20 0 C -25 -15, -10 -20, 0 -10 C 5 10, -15 15, -20 0 Z" fill="#0F172A" />
+    </g>
+
+    <!-- Skull Main Structure -->
+    <g transform="translate(400, 430)">
+      <!-- Cranium Outer -->
+      <path d="M -130 -120 C -130 -230, 130 -230, 130 -120 C 130 -40, 90 20, 75 80 C 60 110, -60 110, -75 80 C -90 20, -130 -40, -130 -120 Z" fill="#FFFFFF" stroke="#0F172A" stroke-width="8" stroke-linejoin="round" />
+      
+      <!-- Cheekbone arcs -->
+      <path d="M -125 -50 C -100 -40, -90 0, -115 45 C -125 60, -120 75, -100 68" fill="none" stroke="#0F172A" stroke-width="5" />
+      <path d="M 125 -50 C 100 -40, 90 0, 115 45 C 125 60, 120 75, 100 68" fill="none" stroke="#0F172A" stroke-width="5" />
+
+      <!-- Nasal Cavity -->
+      <path d="M 0 12 L -20 58 L -7 65 L 0 50 L 7 65 L 20 58 Z" fill="#0F172A" />
+
+      <!-- Upper & Lower Teeth -->
+      <g transform="translate(0, 82)">
+        <path d="M -60 0 L 60 0 L 50 42 L -50 42 Z" fill="#FFFFFF" stroke="#0F172A" stroke-width="6" />
+        <line x1="-38" y1="0" x2="-36" y2="40" stroke="#0F172A" stroke-width="4" />
+        <line x1="-24" y1="0" x2="-22" y2="42" stroke="#0F172A" stroke-width="4" />
+        <line x1="-9" y1="0" x2="-7" y2="42" stroke="#0F172A" stroke-width="4" />
+        <line x1="9" y1="0" x2="7" y2="42" stroke="#0F172A" stroke-width="4" />
+        <line x1="24" y1="0" x2="22" y2="42" stroke="#0F172A" stroke-width="4" />
+        <line x1="38" y1="0" x2="36" y2="40" stroke="#0F172A" stroke-width="4" />
+        <line x1="-48" y1="21" x2="48" y2="21" stroke="#0F172A" stroke-width="4" />
+      </g>
+
+      <!-- Heart-Shaped Sunglasses Left -->
+      <g transform="translate(-55, -45)">
+        <path d="M 0 -25 C -25 -55, -65 -30, -65 5 C -65 38, -15 62, 0 78 C 15 62, 65 38, 65 5 C 65 -30, 25 -55, 0 -25 Z" fill="#0F172A" stroke="#0F172A" stroke-width="7" stroke-linejoin="round" />
+        <path d="M -15 -18 C -28 -35, -50 -20, -48 2 C -46 22, -18 38, -10 46 C -10 30, -30 18, -32 2 C -34 -10, -20 -20, -15 -18 Z" fill="#FFFFFF" />
+        <circle cx="-38" cy="-15" r="4" fill="#FFFFFF" />
+      </g>
+      
+      <!-- Heart-Shaped Sunglasses Right -->
+      <g transform="translate(55, -45)">
+        <path d="M 0 -25 C -25 -55, -65 -30, -65 5 C -65 38, -15 62, 0 78 C 15 62, 65 38, 65 5 C 65 -30, 25 -55, 0 -25 Z" fill="#0F172A" stroke="#0F172A" stroke-width="7" stroke-linejoin="round" />
+        <path d="M -15 -18 C -28 -35, -50 -20, -48 2 C -46 22, -18 38, -10 46 C -10 30, -30 18, -32 2 C -34 -10, -20 -20, -15 -18 Z" fill="#FFFFFF" />
+        <circle cx="-38" cy="-15" r="4" fill="#FFFFFF" />
+      </g>
+
+      <!-- Sunglasses Bridge -->
+      <path d="M -10 -45 Q 0 -55 10 -45" fill="none" stroke="#0F172A" stroke-width="10" stroke-linecap="round" />
+    </g>
+
+    <!-- Skeleton Hands Left -->
+    <g transform="translate(200, 490)">
+      <path d="M -30 180 L -15 80 Q -10 70 -5 85 L -20 180" fill="#FFFFFF" stroke="#0F172A" stroke-width="6" />
+      <path d="M 10 180 L 15 95 Q 20 85 25 100 L 25 180" fill="#FFFFFF" stroke="#0F172A" stroke-width="6" />
+      <path d="M 0 70 Q 15 40 35 15 Q 45 5 45 -15 L 35 -10 Q 25 10 10 35 Z" fill="#FFFFFF" stroke="#0F172A" stroke-width="5" />
+      <path d="M 20 75 Q 35 45 55 20 Q 65 10 65 -10 L 55 -5 Q 45 15 30 40 Z" fill="#FFFFFF" stroke="#0F172A" stroke-width="5" />
+      <path d="M 40 85 Q 55 55 75 30 Q 85 20 85 0 L 75 5 Q 65 25 50 50 Z" fill="#FFFFFF" stroke="#0F172A" stroke-width="5" />
+      <line x1="30" y1="20" x2="40" y2="25" stroke="#0F172A" stroke-width="4" />
+      <line x1="50" y1="25" x2="60" y2="30" stroke="#0F172A" stroke-width="4" />
+      <line x1="70" y1="35" x2="80" y2="40" stroke="#0F172A" stroke-width="4" />
+    </g>
+
+    <!-- Skeleton Hands Right -->
+    <g transform="translate(600, 490) scale(-1, 1)">
+      <path d="M -30 180 L -15 80 Q -10 70 -5 85 L -20 180" fill="#FFFFFF" stroke="#0F172A" stroke-width="6" />
+      <path d="M 10 180 L 15 95 Q 20 85 25 100 L 25 180" fill="#FFFFFF" stroke="#0F172A" stroke-width="6" />
+      <path d="M 0 70 Q 15 40 35 15 Q 45 5 45 -15 L 35 -10 Q 25 10 10 35 Z" fill="#FFFFFF" stroke="#0F172A" stroke-width="5" />
+      <path d="M 20 75 Q 35 45 55 20 Q 65 10 65 -10 L 55 -5 Q 45 15 30 40 Z" fill="#FFFFFF" stroke="#0F172A" stroke-width="5" />
+      <path d="M 40 85 Q 55 55 75 30 Q 85 20 85 0 L 75 5 Q 65 25 50 50 Z" fill="#FFFFFF" stroke="#0F172A" stroke-width="5" />
+      <line x1="30" y1="20" x2="40" y2="25" stroke="#0F172A" stroke-width="4" />
+      <line x1="50" y1="25" x2="60" y2="30" stroke="#0F172A" stroke-width="4" />
+      <line x1="70" y1="35" x2="80" y2="40" stroke="#0F172A" stroke-width="4" />
+    </g>
+
+    <!-- Bottom Left Roses -->
+    <g transform="translate(320, 600)">
+      <path d="M -30 30 C -60 50, -80 30, -60 0 C -40 0, -25 15, -30 30 Z" fill="#FFFFFF" stroke="#0F172A" stroke-width="5" />
+      <path d="M -30 30 L -55 15" stroke="#0F172A" stroke-width="4" />
+      <path d="M 0 50 C -35 30, -50 -10, -25 -40 C 0 -65, 40 -55, 55 -25 C 70 15, 40 65 0 50 Z" fill="#FFFFFF" stroke="#0F172A" stroke-width="6" />
+      <path d="M -15 -25 C -5 -40, 25 -40, 32 -15 C 40 10, 8 32 -8 15 C -16 8, -20 -15, -15 -25 Z" fill="#FFFFFF" stroke="#0F172A" stroke-width="5" />
+      <path d="M 0 -8 C 8 -16, 20 -12, 16 0 C 12 12, -4 8, 0 -8 Z" fill="#0F172A" />
+    </g>
+
+    <!-- Bottom Right Roses -->
+    <g transform="translate(480, 600)">
+      <path d="M 30 30 C 60 50, 80 30, 60 0 C 40 0, 25 15, 30 30 Z" fill="#FFFFFF" stroke="#0F172A" stroke-width="5" />
+      <path d="M 30 30 L 55 15" stroke="#0F172A" stroke-width="4" />
+      <path d="M 0 50 C -40 65, -70 15, -55 -25 C -40 -55, 0 -65, 25 -40 C 50 -10, 35 30 0 50 Z" fill="#FFFFFF" stroke="#0F172A" stroke-width="6" />
+      <path d="M -32 -15 C -25 -40, 5 -40, 15 -25 C 20 -15, 16 8, -8 15 C -40 32, -40 10, -32 -15 Z" fill="#FFFFFF" stroke="#0F172A" stroke-width="5" />
+      <path d="M -16 0 C -20 -12, -8 -16, 0 -8 C 4 8, -12 12, -16 0 Z" fill="#0F172A" />
+    </g>
+  </g>
+</svg>
