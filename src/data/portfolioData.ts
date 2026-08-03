@@ -28,6 +28,21 @@ import universityLogosCard1200 from '../assets/images/university-logos-card-1200
 import universityLogosExpanded768 from '../assets/images/university-logos-expanded-768.webp';
 import universityLogosExpanded1200 from '../assets/images/university-logos-expanded-1200.webp';
 import universityLogosExpanded1672 from '../assets/images/university-logos-expanded-1672.webp';
+import photoEditorialPortrait480 from '../assets/images/photo-editorial-portrait-480.webp';
+import photoEditorialPortrait768 from '../assets/images/photo-editorial-portrait-768.webp';
+import photoEditorialPortrait1200 from '../assets/images/photo-editorial-portrait-1200.webp';
+import photoSurrealComposite480 from '../assets/images/photo-surreal-composite-480.webp';
+import photoSurrealComposite768 from '../assets/images/photo-surreal-composite-768.webp';
+import photoSurrealComposite1200 from '../assets/images/photo-surreal-composite-1200.webp';
+import photoRestoration480 from '../assets/images/photo-restoration-480.webp';
+import photoRestoration768 from '../assets/images/photo-restoration-768.webp';
+import photoRestoration1200 from '../assets/images/photo-restoration-1200.webp';
+import photoArchitecture480 from '../assets/images/photo-architecture-480.webp';
+import photoArchitecture768 from '../assets/images/photo-architecture-768.webp';
+import photoArchitecture1200 from '../assets/images/photo-architecture-1200.webp';
+import photoProductRetouch480 from '../assets/images/photo-product-retouch-480.webp';
+import photoProductRetouch768 from '../assets/images/photo-product-retouch-768.webp';
+import photoProductRetouch1200 from '../assets/images/photo-product-retouch-1200.webp';
 
 export interface Service {
   id: string;
@@ -327,11 +342,12 @@ export const PROJECTS_DATA: Project[] = [
     filterTag: "Photo Editing",
     shortDescription: "High-end fashion portrait color grading, skin retouching, and creative lighting manipulation.",
     thumbnailBg: "from-rose-100 via-pink-100 to-peach-100",
-    image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=1000&q=80",
-    gallery: [
-      "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=1200&q=80",
-      "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=1200&q=80"
-    ],
+    image: photoEditorialPortrait768,
+    imageSrcSet: `${photoEditorialPortrait480} 480w, ${photoEditorialPortrait768} 768w, ${photoEditorialPortrait1200} 1200w`,
+    detailImage: photoEditorialPortrait1200,
+    detailImageSrcSet: `${photoEditorialPortrait480} 480w, ${photoEditorialPortrait768} 768w, ${photoEditorialPortrait1200} 1200w`,
+    detailAspect: '4/3',
+    gallery: [],
     client: "Vogue Creative Lab",
     year: "2025",
     role: "Senior Retoucher & Colorist",
@@ -348,11 +364,12 @@ export const PROJECTS_DATA: Project[] = [
     filterTag: "Photo Editing",
     shortDescription: "Immersive fantasy photomontage and surreal product compositing for an audio gear release.",
     thumbnailBg: "from-purple-100 via-fuchsia-100 to-pink-100",
-    image: "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1000&q=80",
-    gallery: [
-      "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1200&q=80",
-      "https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?auto=format&fit=crop&w=1200&q=80"
-    ],
+    image: photoSurrealComposite768,
+    imageSrcSet: `${photoSurrealComposite480} 480w, ${photoSurrealComposite768} 768w, ${photoSurrealComposite1200} 1200w`,
+    detailImage: photoSurrealComposite1200,
+    detailImageSrcSet: `${photoSurrealComposite480} 480w, ${photoSurrealComposite768} 768w, ${photoSurrealComposite1200} 1200w`,
+    detailAspect: '4/3',
+    gallery: [],
     client: "SoundWave Headphones",
     year: "2024",
     role: "Digital Artist & Image Manipulator",
@@ -369,11 +386,12 @@ export const PROJECTS_DATA: Project[] = [
     filterTag: "Photo Editing",
     shortDescription: "Precision scratch removal, damaged photo repair, and AI-assisted historical colorization.",
     thumbnailBg: "from-amber-100 via-yellow-100 to-stone-100",
-    image: "https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=1000&q=80",
-    gallery: [
-      "https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=1200&q=80",
-      "https://images.unsplash.com/photo-1461360370896-922624d12aa1?auto=format&fit=crop&w=1200&q=80"
-    ],
+    image: photoRestoration768,
+    imageSrcSet: `${photoRestoration480} 480w, ${photoRestoration768} 768w, ${photoRestoration1200} 1200w`,
+    detailImage: photoRestoration1200,
+    detailImageSrcSet: `${photoRestoration480} 480w, ${photoRestoration768} 768w, ${photoRestoration1200} 1200w`,
+    detailAspect: '4/3',
+    gallery: [],
     client: "Heritage Archives Foundation",
     year: "2025",
     role: "Photo Restoration Specialist",
@@ -390,11 +408,12 @@ export const PROJECTS_DATA: Project[] = [
     filterTag: "Photo Editing",
     shortDescription: "Day-to-dusk lighting transformation, perspective correction, and HDR real estate editing.",
     thumbnailBg: "from-blue-100 via-sky-100 to-indigo-100",
-    image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1000&q=80",
-    gallery: [
-      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
-      "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80"
-    ],
+    image: photoArchitecture768,
+    imageSrcSet: `${photoArchitecture480} 480w, ${photoArchitecture768} 768w, ${photoArchitecture1200} 1200w`,
+    detailImage: photoArchitecture1200,
+    detailImageSrcSet: `${photoArchitecture480} 480w, ${photoArchitecture768} 768w, ${photoArchitecture1200} 1200w`,
+    detailAspect: '4/3',
+    gallery: [],
     client: "Apex Luxury Properties",
     year: "2025",
     role: "Architectural Retoucher",
@@ -411,11 +430,12 @@ export const PROJECTS_DATA: Project[] = [
     filterTag: "Photo Editing",
     shortDescription: "Flawless cosmetics and jewelry product retouching with realistic reflection generation.",
     thumbnailBg: "from-neutral-100 via-slate-100 to-stone-100",
-    image: "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=1000&q=80",
-    gallery: [
-      "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=1200&q=80",
-      "https://images.unsplash.com/photo-1535585209827-a15fcdbc4c2d?auto=format&fit=crop&w=1200&q=80"
-    ],
+    image: photoProductRetouch768,
+    imageSrcSet: `${photoProductRetouch480} 480w, ${photoProductRetouch768} 768w, ${photoProductRetouch1200} 1200w`,
+    detailImage: photoProductRetouch1200,
+    detailImageSrcSet: `${photoProductRetouch480} 480w, ${photoProductRetouch768} 768w, ${photoProductRetouch1200} 1200w`,
+    detailAspect: '4/3',
+    gallery: [],
     client: "Luxe Glow Cosmetics",
     year: "2025",
     role: "Commercial Product Retoucher",
