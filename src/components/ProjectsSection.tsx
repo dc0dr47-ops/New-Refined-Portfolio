@@ -90,10 +90,6 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({ onSelectProjec
                       </div>
                     </div>
 
-                    {/* Category Tag Badge */}
-                    <div className="absolute top-4 left-4 z-10 px-3 py-1 rounded-full bg-white/90 backdrop-blur-md text-[#20284F] text-xs font-bold border border-[#FFE9E0] shadow-xs">
-                      {project.category}
-                    </div>
                   </div>
 
                   {/* Card Content */}
@@ -108,9 +104,11 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({ onSelectProjec
                 </div>
 
                 {/* Card Footer Link */}
-                <div className="px-6 pb-6 pt-2 flex items-center justify-between border-t border-[#FFE9E0]/60 text-xs font-bold text-[#FF745A]">
-                  <span className="text-[#7E7A78] font-normal">{project.client} • {project.year}</span>
-                  <span className="flex items-center gap-1 group-hover:translate-x-1 transition-transform">
+                <div className="px-6 pb-6 pt-3 flex items-center justify-between gap-3 border-t border-[#FFE9E0]/60">
+                  <span className="inline-flex shrink-0 items-center rounded-full border border-[#FFE9E0] bg-[#FFF7F3] px-3 py-1 text-[11px] font-bold text-[#20284F] sm:text-xs">
+                    {project.category}
+                  </span>
+                  <span className="flex shrink-0 items-center gap-1 text-xs font-bold text-[#FF745A] group-hover:translate-x-1 transition-transform">
                     <span>View Case Study</span>
                     <ArrowUpRight className="w-4 h-4" />
                   </span>
