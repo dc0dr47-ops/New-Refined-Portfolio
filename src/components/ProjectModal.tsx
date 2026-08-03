@@ -60,6 +60,8 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) 
                 ? `${
                     project.detailAspect === '4/3'
                       ? 'aspect-[4/3]'
+                      : project.detailAspect === '3/2'
+                        ? 'aspect-[3/2]'
                       : project.detailAspect === 'wide'
                         ? 'aspect-[919/448]'
                         : 'aspect-video'

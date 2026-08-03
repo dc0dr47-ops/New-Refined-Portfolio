@@ -1,9 +1,9 @@
 import characterIllustrationCard480 from '../assets/images/character-illustration-card-480.webp';
 import characterIllustrationCard768 from '../assets/images/character-illustration-card-768.webp';
 import characterIllustrationCard1200 from '../assets/images/character-illustration-card-1200.webp';
-import characterIllustrationExpanded768 from '../assets/images/character-illustration-expanded-768.webp';
-import characterIllustrationExpanded1200 from '../assets/images/character-illustration-expanded-1200.webp';
-import characterIllustrationExpanded1672 from '../assets/images/character-illustration-expanded-1672.webp';
+import characterSkeletonExpanded768 from '../assets/images/character-skeleton-expanded-768.webp';
+import characterSkeletonExpanded1200 from '../assets/images/character-skeleton-expanded-1200.webp';
+import characterSkeletonExpanded1536 from '../assets/images/character-skeleton-expanded-1536.webp';
 import isometricTechCard480 from '../assets/images/isometric-tech-card-480.webp';
 import isometricTechCard768 from '../assets/images/isometric-tech-card-768.webp';
 import isometricTechCard1200 from '../assets/images/isometric-tech-card-1200.webp';
@@ -40,7 +40,7 @@ export interface Project {
   imageSrcSet?: string;
   detailImage?: string;
   detailImageSrcSet?: string;
-  detailAspect?: '16/9' | '4/3' | 'wide';
+  detailAspect?: '16/9' | '4/3' | '3/2' | 'wide';
   gallery: string[];
   client: string;
   year: string;
@@ -197,8 +197,9 @@ export const PROJECTS_DATA: Project[] = [
     thumbnailBg: "from-amber-100 via-orange-100 to-peach-100",
     image: characterIllustrationCard768,
     imageSrcSet: `${characterIllustrationCard480} 480w, ${characterIllustrationCard768} 768w, ${characterIllustrationCard1200} 1200w`,
-    detailImage: characterIllustrationExpanded1200,
-    detailImageSrcSet: `${characterIllustrationExpanded768} 768w, ${characterIllustrationExpanded1200} 1200w, ${characterIllustrationExpanded1672} 1672w`,
+    detailImage: characterSkeletonExpanded1200,
+    detailImageSrcSet: `${characterSkeletonExpanded768} 768w, ${characterSkeletonExpanded1200} 1200w, ${characterSkeletonExpanded1536} 1536w`,
+    detailAspect: '3/2',
     gallery: [
       "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1200&q=80",
       "https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?auto=format&fit=crop&w=1200&q=80",
