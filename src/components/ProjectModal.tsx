@@ -54,12 +54,17 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) 
         <div className="p-6 sm:p-8 md:p-10 overflow-y-auto space-y-8">
           
           {/* Main Hero Image */}
-          <div className="rounded-2xl sm:rounded-3xl overflow-hidden border border-[#FFE9E0] shadow-sm max-h-[450px]">
+          <div
+            className={`rounded-2xl sm:rounded-3xl overflow-hidden border border-[#FFE9E0] shadow-sm ${
+              project.detailImage ? 'aspect-video bg-white' : 'max-h-[450px]'
+            }`}
+          >
             <img
-              src={project.image}
+              src={project.detailImage ?? project.image}
               alt={project.title}
               referrerPolicy="no-referrer"
-              className="w-full h-full object-cover"
+              decoding="async"
+              className={`w-full h-full ${project.detailImage ? 'object-contain' : 'object-cover'}`}
             />
           </div>
 

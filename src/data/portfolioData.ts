@@ -1,3 +1,6 @@
+import characterIllustrationCard from '../assets/images/character-illustration-card.png';
+import characterIllustrationExpanded from '../assets/images/character-illustration-expanded.png';
+
 export interface Service {
   id: string;
   number: string;
@@ -26,6 +29,7 @@ export interface Project {
   shortDescription: string;
   thumbnailBg: string;
   image: string;
+  detailImage?: string;
   gallery: string[];
   client: string;
   year: string;
@@ -180,7 +184,8 @@ export const PROJECTS_DATA: Project[] = [
     filterTag: "Illustration",
     shortDescription: "Playful 3D mascot character design and vector series for a tech brand mascot campaign.",
     thumbnailBg: "from-amber-100 via-orange-100 to-peach-100",
-    image: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1000&q=80",
+    image: characterIllustrationCard,
+    detailImage: characterIllustrationExpanded,
     gallery: [
       "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1200&q=80",
       "https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?auto=format&fit=crop&w=1200&q=80",
