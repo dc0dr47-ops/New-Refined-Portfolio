@@ -1,49 +1,3 @@
-import characterIllustrationCard480 from '../assets/images/character-illustration-card-480.webp';
-import characterIllustrationCard768 from '../assets/images/character-illustration-card-768.webp';
-import characterIllustrationCard1200 from '../assets/images/character-illustration-card-1200.webp';
-import characterSkeletonExpanded768 from '../assets/images/character-skeleton-expanded-768.webp';
-import characterSkeletonExpanded1200 from '../assets/images/character-skeleton-expanded-1200.webp';
-import characterSkeletonExpanded1536 from '../assets/images/character-skeleton-expanded-1536.webp';
-import isometricTechCard480 from '../assets/images/isometric-tech-card-480.webp';
-import isometricTechCard768 from '../assets/images/isometric-tech-card-768.webp';
-import isometricTechCard1200 from '../assets/images/isometric-tech-card-1200.webp';
-import oleMissExpanded768 from '../assets/images/ole-miss-expanded-768.webp';
-import oleMissExpanded1200 from '../assets/images/ole-miss-expanded-1200.webp';
-import oleMissExpanded1672 from '../assets/images/ole-miss-expanded-1672.webp';
-import eagleMascotCard480 from '../assets/images/eagle-mascot-card-480.webp';
-import eagleMascotCard768 from '../assets/images/eagle-mascot-card-768.webp';
-import eagleMascotCard1200 from '../assets/images/eagle-mascot-card-1200.webp';
-import eagleMascotExpanded768 from '../assets/images/eagle-mascot-expanded-768.webp';
-import eagleMascotExpanded1200 from '../assets/images/eagle-mascot-expanded-1200.webp';
-import eagleMascotExpanded1672 from '../assets/images/eagle-mascot-expanded-1672.webp';
-import gamecocksCard480 from '../assets/images/gamecocks-card-480.webp';
-import gamecocksCard768 from '../assets/images/gamecocks-card-768.webp';
-import gamecocksCard1200 from '../assets/images/gamecocks-card-1200.webp';
-import gamecocksExpanded768 from '../assets/images/gamecocks-expanded-768.webp';
-import gamecocksExpanded1200 from '../assets/images/gamecocks-expanded-1200.webp';
-import gamecocksExpanded1672 from '../assets/images/gamecocks-expanded-1672.webp';
-import universityLogosCard480 from '../assets/images/university-logos-card-480.webp';
-import universityLogosCard768 from '../assets/images/university-logos-card-768.webp';
-import universityLogosCard1200 from '../assets/images/university-logos-card-1200.webp';
-import universityLogosExpanded768 from '../assets/images/university-logos-expanded-768.webp';
-import universityLogosExpanded1200 from '../assets/images/university-logos-expanded-1200.webp';
-import universityLogosExpanded1672 from '../assets/images/university-logos-expanded-1672.webp';
-import photoEditorialPortrait480 from '../assets/images/photo-editorial-portrait-480.webp';
-import photoEditorialPortrait768 from '../assets/images/photo-editorial-portrait-768.webp';
-import photoEditorialPortrait1200 from '../assets/images/photo-editorial-portrait-1200.webp';
-import photoSurrealComposite480 from '../assets/images/photo-surreal-composite-480.webp';
-import photoSurrealComposite768 from '../assets/images/photo-surreal-composite-768.webp';
-import photoSurrealComposite1200 from '../assets/images/photo-surreal-composite-1200.webp';
-import photoRestoration480 from '../assets/images/photo-restoration-480.webp';
-import photoRestoration768 from '../assets/images/photo-restoration-768.webp';
-import photoRestoration1200 from '../assets/images/photo-restoration-1200.webp';
-import photoArchitecture480 from '../assets/images/photo-architecture-480.webp';
-import photoArchitecture768 from '../assets/images/photo-architecture-768.webp';
-import photoArchitecture1200 from '../assets/images/photo-architecture-1200.webp';
-import photoProductRetouch480 from '../assets/images/photo-product-retouch-480.webp';
-import photoProductRetouch768 from '../assets/images/photo-product-retouch-768.webp';
-import photoProductRetouch1200 from '../assets/images/photo-product-retouch-1200.webp';
-
 export interface Service {
   id: string;
   number: string;
@@ -72,10 +26,6 @@ export interface Project {
   shortDescription: string;
   thumbnailBg: string;
   image: string;
-  imageSrcSet?: string;
-  detailImage?: string;
-  detailImageSrcSet?: string;
-  detailAspect?: '16/9' | '4/3' | '3/2' | 'wide';
   gallery: string[];
   client: string;
   year: string;
@@ -222,116 +172,112 @@ export const TOOLS_DATA: Tool[] = [
 ];
 
 export const PROJECTS_DATA: Project[] = [
-  // ================= PROJECTS =================
+  // ================= ILLUSTRATION (5 PROJECTS) =================
   {
-    id: "skull-typography-apparel",
-    title: "Skull Typography Apparel Collection",
+    id: "character-illustration",
+    title: "Character Illustration Collection",
     category: "Vector Illustration",
     filterTag: "Illustration",
-    shortDescription: "Bold black-and-white skull illustrations paired with expressive lettering for apparel and merchandise.",
-    thumbnailBg: "from-slate-100 via-zinc-100 to-stone-100",
-    image: characterIllustrationCard768,
-    imageSrcSet: `${characterIllustrationCard480} 480w, ${characterIllustrationCard768} 768w, ${characterIllustrationCard1200} 1200w`,
-    detailImage: characterSkeletonExpanded1200,
-    detailImageSrcSet: `${characterSkeletonExpanded768} 768w, ${characterSkeletonExpanded1200} 1200w, ${characterSkeletonExpanded1536} 1536w`,
-    detailAspect: '3/2',
-    gallery: [],
-    client: "Independent Apparel Collection",
-    year: "2026",
-    role: "Vector Illustrator & Lettering Designer",
-    overview: "Developed a coordinated collection of skull-based graphics combining detailed monochrome illustration with bold, personality-driven typography for shirts, stickers, and print merchandise.",
-    challenge: "Keeping intricate skull details, decorative elements, and varied lettering styles readable at both small print sizes and large-format applications without losing visual impact.",
-    approach: "Built each design with clean high-contrast linework, balanced negative space, and carefully matched type treatments, then refined the artwork for dependable reproduction across print and digital formats.",
-    toolsUsed: ["Adobe Illustrator", "Adobe Photoshop", "AI Tools"],
-    outcome: "Delivered a cohesive, print-ready collection of distinctive skull graphics suitable for apparel, stickers, posters, and merchandise."
+    shortDescription: "Playful 3D mascot character design and vector series for a tech brand mascot campaign.",
+    thumbnailBg: "from-amber-100 via-orange-100 to-peach-100",
+    image: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1000&q=80",
+    gallery: [
+      "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1563089145-599997674d42?auto=format&fit=crop&w=1200&q=80"
+    ],
+    client: "Lumina Tech Studios",
+    year: "2025",
+    role: "Lead Illustrator & Character Designer",
+    overview: "Created a series of 12 vibrant, friendly mascot character poses for Lumina's digital onboarding app. Each character embodies core brand values like curiosity, speed, and collaboration.",
+    challenge: "Developing a friendly 3D-styled vector illustration system that scales effortlessly across mobile app banners, physical stickers, and web hero graphics while maintaining sharp vector precision.",
+    approach: "Designed modular character rigs in Adobe Illustrator with custom isometric grid guides, layered soft radial highlights, and warm pastel color gradients.",
+    toolsUsed: ["Adobe Illustrator", "Figma", "AI Tools"],
+    outcome: "Increased user onboarding engagement by 34% and won the 2025 Creative Vector Award for Mascot Design."
   },
   {
-    id: "ole-miss-rebels-branding",
-    title: "Ole Miss Rebels Branding Collection",
+    id: "isometric-tech-illustrations",
+    title: "Isometric Tech Illustration System",
     category: "Vector Illustration",
     filterTag: "Illustration",
-    shortDescription: "A collegiate branding study featuring Ole Miss wordmarks, Rebels lettering, emblems, and mascot artwork.",
-    thumbnailBg: "from-red-100 via-white to-blue-100",
-    image: isometricTechCard768,
-    imageSrcSet: `${isometricTechCard480} 480w, ${isometricTechCard768} 768w, ${isometricTechCard1200} 1200w`,
-    detailImage: oleMissExpanded1200,
-    detailImageSrcSet: `${oleMissExpanded768} 768w, ${oleMissExpanded1200} 1200w, ${oleMissExpanded1672} 1672w`,
-    detailAspect: '16/9',
-    gallery: [],
-    client: "Ole Miss Rebels — Concept Study",
-    year: "2026",
-    role: "Brand & Mascot Illustration Designer",
-    overview: "Created a presentation-ready collegiate identity study uniting Ole Miss scripts, Rebels wordmarks, varsity emblems, and illustrated mascot variations within one consistent visual collection.",
-    challenge: "Maintaining a recognizable red-and-navy identity across very different assets, from compact badges and lettermarks to expressive scripts and detailed mascot illustrations.",
-    approach: "Standardized the color palette, outline hierarchy, letter proportions, and mascot styling so every element feels related while remaining clear and distinctive at different sizes.",
+    shortDescription: "Custom 3D isometric vector asset library and hero graphics for a SaaS cloud platform.",
+    thumbnailBg: "from-sky-100 via-indigo-100 to-blue-100",
+    image: "https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=1000&q=80",
+    gallery: [
+      "https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1558655146-d09347e92766?auto=format&fit=crop&w=1200&q=80"
+    ],
+    client: "DataPulse Analytics",
+    year: "2025",
+    role: "Lead Vector Artist",
+    overview: "Designed an extensive library of 40+ isometric vector icons and contextual hero illustrations for DataPulse's enterprise software suite.",
+    challenge: "Ensuring exact isometric angle alignment across complex data structures while maintaining crisp readability at micro sizes.",
+    approach: "Created custom isometric grid templates and modular vector components in Adobe Illustrator with scalable stroke weights.",
+    toolsUsed: ["Adobe Illustrator", "Figma"],
+    outcome: "Standardized enterprise design system across 6 product teams, improving UI visual consistency."
+  },
+  {
+    id: "botanical-vector-series",
+    title: "Botanical & Organic Vector Artwork",
+    category: "Vector Illustration",
+    filterTag: "Illustration",
+    shortDescription: "Hand-crafted organic botanical vector series for high-end lifestyle brand packaging.",
+    thumbnailBg: "from-emerald-100 via-teal-100 to-green-100",
+    image: "https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?auto=format&fit=crop&w=1000&q=80",
+    gallery: [
+      "https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=1200&q=80"
+    ],
+    client: "Verdant Living Co.",
+    year: "2025",
+    role: "Botanical Illustrator",
+    overview: "Created a series of intricate vector botanical illustrations depicting exotic foliage, flowers, and medicinal herbs for organic skincare packaging and luxury stationery.",
+    challenge: "Balancing delicate organic line-work with bold, reproducible vector shapes suitable for gold foil stamping.",
+    approach: "Combined hand-drawn brush ink sketches with precision pen tool vectorization and custom textured gradient overlays.",
     toolsUsed: ["Adobe Illustrator", "Adobe Photoshop"],
-    outcome: "Produced a cohesive branding collection suitable for presentations, fan merchandise concepts, social graphics, and promotional applications."
+    outcome: "Featured on luxury packaging in over 120 retail boutiques nationwide."
   },
   {
-    id: "bald-eagle-mascot-collection",
-    title: "Bald Eagle Mascot Illustration Collection",
+    id: "retro-synthwave-posters",
+    title: "Retro Synthwave Vector Poster Series",
     category: "Vector Illustration",
     filterTag: "Illustration",
-    shortDescription: "A bold series of bald-eagle mascot illustrations developed for athletic branding, apparel, and merchandise.",
-    thumbnailBg: "from-amber-100 via-white to-stone-100",
-    image: eagleMascotCard768,
-    imageSrcSet: `${eagleMascotCard480} 480w, ${eagleMascotCard768} 768w, ${eagleMascotCard1200} 1200w`,
-    detailImage: eagleMascotExpanded1200,
-    detailImageSrcSet: `${eagleMascotExpanded768} 768w, ${eagleMascotExpanded1200} 1200w, ${eagleMascotExpanded1672} 1672w`,
-    detailAspect: '16/9',
-    gallery: [],
-    client: "Athletic Mascot Concept Series",
-    year: "2026",
-    role: "Vector Illustrator & Mascot Designer",
-    overview: "Developed a coordinated collection of bald-eagle mascot heads exploring frontal, profile, angled, calm, and aggressive expressions for sports identities and promotional artwork.",
-    challenge: "Preserving the eagle's recognizable anatomy and commanding personality across multiple poses while keeping every variation consistent, scalable, and readable at logo sizes.",
-    approach: "Constructed each mascot with sharp black contour work, layered white feather shapes, controlled brown shadows, and a unified gold palette for the beak and eyes.",
-    toolsUsed: ["Adobe Illustrator", "Adobe Photoshop", "AI Tools"],
-    outcome: "Delivered a versatile, print-ready mascot system suitable for team identities, uniforms, apparel, stickers, signage, and digital campaigns."
+    shortDescription: "Vibrant 80s neon synthwave vector artwork and concert poster series.",
+    thumbnailBg: "from-purple-100 via-pink-100 to-rose-100",
+    image: "https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?auto=format&fit=crop&w=1000&q=80",
+    gallery: [
+      "https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1200&q=80"
+    ],
+    client: "Neon Dreams Festival",
+    year: "2024",
+    role: "Visual Artist & Poster Designer",
+    overview: "Designed a nostalgic retro-futuristic poster series featuring neon wireframe landscapes, chrome typography, and glowing suns for an electronic music festival.",
+    challenge: "Creating vibrant glowing atmospheric effects using pure scalable vector gradients and blend modes.",
+    approach: "Utilized Illustrator blend tools, multi-stop radial gradients, and custom chrome drop-shadow treatments.",
+    toolsUsed: ["Adobe Illustrator", "Adobe Photoshop"],
+    outcome: "Over 5,000 physical print prints sold out within 48 hours of release."
   },
   {
-    id: "south-carolina-gamecocks-collection",
-    title: "South Carolina Gamecocks Illustration Collection",
+    id: "cyber-city-concept-art",
+    title: "Cyberpunk Cityscape Concept Vector Art",
     category: "Vector Illustration",
     filterTag: "Illustration",
-    shortDescription: "A collegiate illustration series featuring Gamecocks mascot artwork, campus emblems, badges, and fan graphics.",
-    thumbnailBg: "from-red-100 via-white to-zinc-100",
-    image: gamecocksCard768,
-    imageSrcSet: `${gamecocksCard480} 480w, ${gamecocksCard768} 768w, ${gamecocksCard1200} 1200w`,
-    detailImage: gamecocksExpanded1200,
-    detailImageSrcSet: `${gamecocksExpanded768} 768w, ${gamecocksExpanded1200} 1200w, ${gamecocksExpanded1672} 1672w`,
-    detailAspect: '16/9',
-    gallery: [],
-    client: "South Carolina Gamecocks — Concept Study",
-    year: "2026",
-    role: "Vector Illustrator & Collegiate Graphics Designer",
-    overview: "Created a coordinated collection of South Carolina Gamecocks artwork combining a bold rooster mascot with university-inspired crests, campus symbols, fan slogans, and athletic badge designs.",
-    challenge: "Maintaining consistent garnet, black, and white styling across mascot illustration, typography, architectural icons, state symbols, and differently shaped emblems.",
-    approach: "Built a unified visual system using strong athletic lettering, high-contrast outlines, controlled color hierarchy, and repeatable badge construction suited to both detailed and compact applications.",
-    toolsUsed: ["Adobe Illustrator", "Adobe Photoshop", "AI Tools"],
-    outcome: "Delivered a versatile, print-ready collection suitable for fan apparel concepts, stickers, campus merchandise, social graphics, signage, and promotional materials."
-  },
-  {
-    id: "university-logo-design-collection",
-    title: "University Logo Design Collection",
-    category: "Vector Illustration",
-    filterTag: "Illustration",
-    shortDescription: "A polished collection of university-inspired wordmarks, monograms, crests, and athletic logo concepts.",
-    thumbnailBg: "from-red-100 via-amber-100 to-white",
-    image: universityLogosCard768,
-    imageSrcSet: `${universityLogosCard480} 480w, ${universityLogosCard768} 768w, ${universityLogosCard1200} 1200w`,
-    detailImage: universityLogosExpanded1200,
-    detailImageSrcSet: `${universityLogosExpanded768} 768w, ${universityLogosExpanded1200} 1200w, ${universityLogosExpanded1672} 1672w`,
-    detailAspect: '16/9',
-    gallery: [],
-    client: "Collegiate Identity Concept Series",
-    year: "2026",
-    role: "Vector Logo & Identity Designer",
-    overview: "Created a coordinated set of university-inspired identity concepts, pairing bold letterforms and classic crest construction with athletic emblems, school-color systems, and recognisable mascots.",
-    challenge: "Giving each identity a distinct collegiate personality while keeping the shapes clean, legible, and strong enough for uniforms, signage, digital media, and small-format merchandise.",
-    approach: "Used geometric letter construction, carefully balanced outlines, traditional varsity proportions, and focused color palettes to produce marks that remain clear and cohesive at every scale.",
-    toolsUsed: ["Adobe Illustrator", "Adobe Photoshop", "AI Tools"],
-    outcome: "Delivered a flexible set of presentation-ready logo concepts suitable for university branding studies, athletics graphics, apparel, stickers, and promotional design."
+    shortDescription: "Detailed vector cityscape illustration with futuristic neon architecture and atmospheric lighting.",
+    thumbnailBg: "from-cyan-100 via-blue-100 to-slate-100",
+    image: "https://images.unsplash.com/photo-1519501025264-65ba15a82390?auto=format&fit=crop&w=1000&q=80",
+    gallery: [
+      "https://images.unsplash.com/photo-1519501025264-65ba15a82390?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1514565131-fce0801e5785?auto=format&fit=crop&w=1200&q=80"
+    ],
+    client: "Aether Interactive Games",
+    year: "2025",
+    role: "Concept Environment Artist",
+    overview: "Developed detailed vector concept environments and keyframe artwork for an indie sci-fi video game project.",
+    challenge: "Maintaining visual clarity across dozens of overlapping skyscraper layers and holographic signboards.",
+    approach: "Organized complex artwork into structured depth layers with atmospheric perspective color fades.",
+    toolsUsed: ["Adobe Illustrator", "AI Tools"],
+    outcome: "Used as primary marketing key art during successful Kickstarter campaign funding."
   },
 
   // ================= PHOTO EDITING (5 PROJECTS) =================
@@ -342,12 +288,11 @@ export const PROJECTS_DATA: Project[] = [
     filterTag: "Photo Editing",
     shortDescription: "High-end fashion portrait color grading, skin retouching, and creative lighting manipulation.",
     thumbnailBg: "from-rose-100 via-pink-100 to-peach-100",
-    image: photoEditorialPortrait768,
-    imageSrcSet: `${photoEditorialPortrait480} 480w, ${photoEditorialPortrait768} 768w, ${photoEditorialPortrait1200} 1200w`,
-    detailImage: photoEditorialPortrait1200,
-    detailImageSrcSet: `${photoEditorialPortrait480} 480w, ${photoEditorialPortrait768} 768w, ${photoEditorialPortrait1200} 1200w`,
-    detailAspect: '4/3',
-    gallery: [],
+    image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=1000&q=80",
+    gallery: [
+      "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=1200&q=80"
+    ],
     client: "Vogue Creative Lab",
     year: "2025",
     role: "Senior Retoucher & Colorist",
@@ -364,12 +309,11 @@ export const PROJECTS_DATA: Project[] = [
     filterTag: "Photo Editing",
     shortDescription: "Immersive fantasy photomontage and surreal product compositing for an audio gear release.",
     thumbnailBg: "from-purple-100 via-fuchsia-100 to-pink-100",
-    image: photoSurrealComposite768,
-    imageSrcSet: `${photoSurrealComposite480} 480w, ${photoSurrealComposite768} 768w, ${photoSurrealComposite1200} 1200w`,
-    detailImage: photoSurrealComposite1200,
-    detailImageSrcSet: `${photoSurrealComposite480} 480w, ${photoSurrealComposite768} 768w, ${photoSurrealComposite1200} 1200w`,
-    detailAspect: '4/3',
-    gallery: [],
+    image: "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1000&q=80",
+    gallery: [
+      "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?auto=format&fit=crop&w=1200&q=80"
+    ],
     client: "SoundWave Headphones",
     year: "2024",
     role: "Digital Artist & Image Manipulator",
@@ -386,12 +330,11 @@ export const PROJECTS_DATA: Project[] = [
     filterTag: "Photo Editing",
     shortDescription: "Precision scratch removal, damaged photo repair, and AI-assisted historical colorization.",
     thumbnailBg: "from-amber-100 via-yellow-100 to-stone-100",
-    image: photoRestoration768,
-    imageSrcSet: `${photoRestoration480} 480w, ${photoRestoration768} 768w, ${photoRestoration1200} 1200w`,
-    detailImage: photoRestoration1200,
-    detailImageSrcSet: `${photoRestoration480} 480w, ${photoRestoration768} 768w, ${photoRestoration1200} 1200w`,
-    detailAspect: '4/3',
-    gallery: [],
+    image: "https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=1000&q=80",
+    gallery: [
+      "https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1461360370896-922624d12aa1?auto=format&fit=crop&w=1200&q=80"
+    ],
     client: "Heritage Archives Foundation",
     year: "2025",
     role: "Photo Restoration Specialist",
@@ -408,12 +351,11 @@ export const PROJECTS_DATA: Project[] = [
     filterTag: "Photo Editing",
     shortDescription: "Day-to-dusk lighting transformation, perspective correction, and HDR real estate editing.",
     thumbnailBg: "from-blue-100 via-sky-100 to-indigo-100",
-    image: photoArchitecture768,
-    imageSrcSet: `${photoArchitecture480} 480w, ${photoArchitecture768} 768w, ${photoArchitecture1200} 1200w`,
-    detailImage: photoArchitecture1200,
-    detailImageSrcSet: `${photoArchitecture480} 480w, ${photoArchitecture768} 768w, ${photoArchitecture1200} 1200w`,
-    detailAspect: '4/3',
-    gallery: [],
+    image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1000&q=80",
+    gallery: [
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80"
+    ],
     client: "Apex Luxury Properties",
     year: "2025",
     role: "Architectural Retoucher",
@@ -430,12 +372,11 @@ export const PROJECTS_DATA: Project[] = [
     filterTag: "Photo Editing",
     shortDescription: "Flawless cosmetics and jewelry product retouching with realistic reflection generation.",
     thumbnailBg: "from-neutral-100 via-slate-100 to-stone-100",
-    image: photoProductRetouch768,
-    imageSrcSet: `${photoProductRetouch480} 480w, ${photoProductRetouch768} 768w, ${photoProductRetouch1200} 1200w`,
-    detailImage: photoProductRetouch1200,
-    detailImageSrcSet: `${photoProductRetouch480} 480w, ${photoProductRetouch768} 768w, ${photoProductRetouch1200} 1200w`,
-    detailAspect: '4/3',
-    gallery: [],
+    image: "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=1000&q=80",
+    gallery: [
+      "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1535585209827-a15fcdbc4c2d?auto=format&fit=crop&w=1200&q=80"
+    ],
     client: "Luxe Glow Cosmetics",
     year: "2025",
     role: "Commercial Product Retoucher",
